@@ -4,7 +4,7 @@ const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint;
 var engine, world;
 
-var bal;
+var ball,ground;
 var madhur1,madhur2;
 var ball;
 var slingShot;
@@ -19,7 +19,7 @@ function setup() {
   world = engine.world;
 
   createCanvas(900,400);
- 
+  ground = new Ground();
   madhur1 = new Stand(380,300,270,10);
   madhur2 = new Stand(700,200,200,10);
   miss1 = new Block(280,275,30,40);  
